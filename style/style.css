@@ -1,0 +1,46 @@
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.blue {
+    position: relative;
+    background-color: blue;
+    left: 500px;
+    z-index: 20;
+}
+.yellow {
+    position: relative;
+    left: 570px;
+    top: -30px;
+    background-color: yellow;
+    z-index: 20;
+}
+.yellow::before {
+    content: "";
+    width: 32px;
+    height: 30px;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    z-index: 24;
+    background: pink;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+
+}
+.pink {
+    position: relative;
+    top: -60px;
+    left: 500px;
+    background: pink;
+    z-index: 0;
+}
+.green {
+    position: relative;
+    background: green;
+    left: 430px;
+    top:  -230px;
+    z-index: 10;
+}
